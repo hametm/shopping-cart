@@ -12,16 +12,19 @@ function Shop() {
         {name: "rocketship", id: uuid()},
     ];
 
-    const addToCart = (product) => {
-        console.log(product.name + " added");
-        setCartList(cartList.concat(product));
+    const addToCart = (product, amount) => {
+        console.log(amount + " " + product.name + " added");
+        let amountTracker = [];
+        for (let i = 0; i < amount; i++) {
+            amountTracker.push(product);
+        };
+        setCartList(cartList.concat(amountTracker));
+        console.log(cartList); // Something is weird here -- why does it only update on the next button click?
     }
 
     const showProducts = productList.map(product => {
         return <Product name={product.name} key={product.id} addToCart={addToCart} />
     });
-
-
     
     return (
         <div>
