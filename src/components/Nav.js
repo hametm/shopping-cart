@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Nav = () => {
+const Nav = (props) => {
     return (
         <nav>
             <ul>
@@ -10,6 +10,9 @@ const Nav = () => {
                 </Link>
                 <Link to="/shop">
                     <li>Shop</li>
+                </Link>
+                <Link to="/cart">
+                    <li>Cart: {props.amount}</li>
                 </Link>
             </ul>
         </nav>

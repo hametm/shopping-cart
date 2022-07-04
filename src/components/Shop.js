@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Nav from "./Nav";
-import Cart from "./Cart";
 import Product from "./Product";
 import { v4 as uuid } from 'uuid';
 
@@ -13,13 +12,12 @@ function Shop() {
     ];
 
     const addToCart = (product, amount) => {
-        console.log(amount + " " + product.name + " added");
         let amountTracker = [];
         for (let i = 0; i < amount; i++) {
             amountTracker.push(product);
         };
         setCartList(cartList.concat(amountTracker));
-        console.log(cartList); // Something is weird here -- why does it only update on the next button click?
+        // console.log(cartList); // Something is weird here -- why does it only update on the next button click?
     }
 
     const showProducts = productList.map(product => {
@@ -28,8 +26,7 @@ function Shop() {
     
     return (
         <div>
-            <Nav />
-            <Cart amount={cartList.length} />
+            <Nav amount={cartList.length} />
             <h1>Hello from Shop!</h1>
             {showProducts}
         </div>

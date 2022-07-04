@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
+import Nav from "./Nav";
 
-function Cart(props) {
-    const [cartItems, setCartItems] = useState([]);
+function Cart() {
     return (
         <div>
-            <p>Items in cart: {props.amount}</p>
-            <button>Check out</button>
+            <Nav />
+            <h1>Hello from Cart!</h1>
         </div>
     );
 }
