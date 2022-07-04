@@ -5,6 +5,7 @@ import { v4 as uuid } from 'uuid';
 
 function Shop() {
     const [cartList, setCartList] = useState([]);
+    const [cartAmount, setCartAmount] = useState(0);
     const productList = [
         {name: "banana", id: uuid()},
         {name: "keyring", id: uuid()},
@@ -12,12 +13,8 @@ function Shop() {
     ];
 
     const addToCart = (product, amount) => {
-        let amountTracker = [];
-        for (let i = 0; i < amount; i++) {
-            amountTracker.push(product);
-        };
-        setCartList(cartList.concat(amountTracker));
-        // console.log(cartList); // Something is weird here -- why does it only update on the next button click?
+        const cartProduct = { name: product.name, key: uuid(), amount: +amount };
+        setCartAmount(x => +x + cartProduct.amount);
     }
 
     const showProducts = productList.map(product => {
@@ -26,7 +23,7 @@ function Shop() {
     
     return (
         <div>
-            <Nav amount={cartList.length} />
+            <Nav amount={cartAmount} />
             <h1>Hello from Shop!</h1>
             {showProducts}
         </div>
