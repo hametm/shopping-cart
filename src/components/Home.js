@@ -3,10 +3,10 @@ import "../styles/style.css";
 import { Link } from "react-router-dom";
 
 
-function Home() {
+function Home(props) {
   return (
     <div className="container">
-      <Nav />
+      <Nav amount={props.amount}/>
       <main id="homeContainer">
         <div id="homeText">
           <h1>fresh fruit, right when you need it.</h1>

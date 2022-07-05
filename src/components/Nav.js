@@ -5,10 +5,12 @@ import logo from "../styles/images/logo.png";
 const Nav = (props) => {
     return (
         <nav>
-            <div id="logo">
-                <div><img src={logo} alt="fruits" /></div>
-                <h4>fruit</h4>
-            </div>
+            <Link style={{textDecoration: "none"}} to="/">
+                <div id="logo">
+                    <div><img src={logo} alt="fruits" /></div>
+                    <h4>fruit</h4>
+                </div>
+            </Link>
             <ul>
                 <Link style={{textDecoration: "none"}} to="/">
                     <li>Home</li>

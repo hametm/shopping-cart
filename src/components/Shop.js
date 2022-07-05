@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Nav from "./Nav";
 import Product from "./Product";
-import { v4 as uuid } from 'uuid';
 import apple from "../styles/images/apple.png";
 import avocado from "../styles/images/avocado.png";
 import banana from "../styles/images/banana.png";
@@ -13,10 +12,10 @@ import lime from "../styles/images/lime.png";
 import orange from "../styles/images/orange.png";
 import strawberry from "../styles/images/strawberry.png";
 import watermelon from "../styles/images/watermelon.png";
+import { v4 as uuid } from 'uuid';
 
-function Shop() {
-    const [cartList, setCartList] = useState([]);
-    const [cartAmount, setCartAmount] = useState(0);
+function Shop(props) {
+
     const productList = [
         {name: "Kiwi", id: uuid(), image: kiwi, price: "$2"},
         {name: "Banana", id: uuid(), image: banana, price: "$1"},
@@ -32,19 +31,10 @@ function Shop() {
         {name: "Watermelon", id: uuid(), image: watermelon, price: "$5"},
     ];
 
-    const addToCart = (product, amount) => {
-        const cartProduct = { 
-            name: product.name, 
-            key: uuid(), amount: +amount, 
-            };
-        setCartList(cartList.concat(cartProduct));
-        setCartAmount(x => +x + cartProduct.amount);
-    }
-
     const showProducts = productList.map(product => {
         return <Product name={product.name} 
                     key={product.id} 
-                    addToCart={addToCart} 
+                    addToCart={props.addToCart} 
                     src={product.image} 
                     price={product.price} 
                 />
@@ -52,13 +42,13 @@ function Shop() {
     
     return (
         <div className="container">
-            <Nav amount={cartAmount} />
-            <div id="shopContainer">
+            <Nav amount={props.amount}/>
+            <main id="shopContainer">
                 <header>
-                    <h1>shop all fruit</h1>
+                    <h1>all fruit</h1>
                 </header>
                 <div id="productContainer">{showProducts}</div>
-            </div>
+            </main>
         </div>
     );
 }
