@@ -1,8 +1,10 @@
 function Product(props) {
     let amount;
     return (
-        <div>
+        <div className="product">
+            <img className="productImg" src={props.src} alt={props.name} />
             <h3>{props.name}</h3>
+            <p>{props.price}</p>
             <label htmlFor="itemAmount">Amount: </label>
             <input type="number" 
                 id="itemAmount"
@@ -11,7 +13,7 @@ function Product(props) {
                     amount = e.target.value;
                 }} 
             />
-            <button onClick={() => props.addToCart(props, amount)}>Add to cart</button>
+            <button className="addBtn" onClick={() => props.addToCart(props, amount)}>Add to cart</button>
         </div>
     );
 }

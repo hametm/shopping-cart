@@ -2,10 +2,15 @@ import React, { useState, useEffect } from "react";
 import Nav from "./Nav";
 
 function Cart() {
+    
+
     return (
-        <div>
+        <div className="container">
             <Nav />
-            <h1>Hello from Cart!</h1>
+            <div id="cartContainer">
+                <h1>Hello from Cart!</h1>
+            </div>
+            
         </div>
     );
 }

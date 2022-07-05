@@ -1,17 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&display=swap');
+
+:root {
+    --green: #8fae5e;
+    --yellow: #f9d44f;
+    --orange: #ff786c;
+    --pink: #c64a88;
+    --purple: #4e3b7b;
+}
+
 body {
     margin: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+#root {
+
+}
+
+.container {
+    min-height: 100vh;
+}
+
+/* Nav */
+
 nav {
-    background-color: rgb(211, 211, 211);
+    background-color: var(--pink);
+    padding: .5rem 4rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 nav ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    gap: 2.5rem;
 }
 
-nav li {
+ nav li {
     list-style-type: none;
+    font-size: 1.2rem;
+    color: white;
 }
+
+nav li:hover {
+    color: rgb(229, 229, 229);
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+
+#logo:hover {
+    cursor: pointer;
+}
+
+#logo img {
+    width: 40px;
+}
+
+nav h4 {
+    color: white;
+    font-family: 'Londrina Solid', cursive;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+/* Shop */
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+header h1 {
+    margin: 2rem 3rem;
+    font-family: 'Londrina Solid', cursive;
+    font-size: 5rem;
+    color: var(--yellow);
+    letter-spacing: 1px;
+}
+
+#shopContainer {
+    display: grid;
+    grid-template-rows: auto;
+    place-items: center;
+    margin-bottom: 4rem;
+}
+
+#productContainer {
+    display: grid;
+    width: 75%;
+    grid-template-columns: repeat(auto-fit, 220px);
+    gap: 3rem;
+}
+
+.product {
+    display: grid;
+    grid-template-rows: auto;
+    place-items: center;
+    gap: .75rem;
+}
+
+.product p {
+    margin: 0;
+}
+
+.productImg {
+    width: 50%;
+    margin-bottom: .5rem;
+}
+
+h3 {
+    margin: 0;
+}
+
+.addBtn {
+    border: none;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 8px;
+    font-size: 1rem;
+    background-color: var(--yellow);
+    color: white;
+    box-shadow: -2px 2px #e2c046;
+}
+
+.addBtn:hover {
+    background-color: #e2c046;
+    cursor: pointer;
+}
+
+.addBtn:active {
+    transform: translate(2px, 2px);
+}
+
