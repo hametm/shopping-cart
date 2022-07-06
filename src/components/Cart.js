@@ -3,16 +3,20 @@ import Nav from "./Nav";
 
 function Cart(props) {
 
-    // useEffect(() => {
-    //     if (props.list.length === 0) {
-    //         const container = document.getElementById("cartContainer");
-    //         container.innerHTML = "";
-    //     }
-    // }, props.list)
+    useEffect(() => {
+        for (let i = 0; i < props.list.length; i++) {
+            if (props.list[i].amount === 0) {
+                const container = document.getElementById(props.list[i].name);
+                if (container) {
+                    container.remove();
+                }
+            }
+        }
+    }, props.list.amount);
 
     const displayCart = props.list.map(product => {
         return (
-            <div className="cartProduct">
+            <div className="cartProduct" id={product.name}>
                 <div id="cartProductInfo">
                     <div id="photo">Image placeholder</div>
                     <div id="infoText">

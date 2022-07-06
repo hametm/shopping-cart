@@ -10,7 +10,7 @@
 
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 
@@ -211,7 +211,7 @@ h3 {
 .addBtn {
     border: none;
     border-radius: 5px;
-    font-family: 'Roboto', sans-serif;    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     padding: 8px;
     font-size: 1rem;
     background-color: var(--yellow);
@@ -297,7 +297,7 @@ h3 {
 #checkoutBtn {
     border: none;
     border-radius: 5px;
-    font-family: 'Roboto', sans-serif;    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
     padding: 8px;
     font-size: 1.1rem;
     background-color: var(--yellow);
