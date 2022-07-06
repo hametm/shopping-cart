@@ -250,7 +250,15 @@ h3 {
     margin-top: 0;
 }
 
-.cartProduct {
+#checkoutContainer {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    justify-content: center;
+    gap: 5rem;
+    width: 85%;
+}
+
+.cartItem {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -259,28 +267,44 @@ h3 {
     box-shadow: -2px 2px 5px rgb(173, 173, 173);
 }
 
-#cartProductContainer {
-    display: grid;
-    grid-template-rows: repeat(auto-fit, 210px);
-    gap: 2rem;
-}
-
-#cartProductInfo {
+#cartItemInfo {
     display: flex;
     gap: 2rem;
     align-items: center;
 }
 
-#cartProductInfo img {
+#cartItemInfo img {
     width: 100%;
 }
 
-#checkoutContainer {
+#cartLeft {
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    justify-content: center;
-    gap: 5rem;
-    width: 85%;
+    grid-template-rows: repeat(auto-fit, 210px);
+    gap: 2rem;
+}
+
+#cartRight {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#cartImgContainer {
+    height: 150px;
+    width: 150px;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    border-left: 5px solid var(--green);
+}
+
+#infoText {
+    display: flex;
+    flex-direction: column;
+}
+
+#infoText p {
+    margin: .5rem;
+    font-size: 1.2rem;
 }
 
 #quantity {
@@ -303,6 +327,24 @@ h3 {
     cursor: pointer;
 }
 
+.discountText {
+    color: rgb(186, 89, 89);
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+}
+
+.totalText {
+    font-size: 1.2rem;
+}
+
+
+hr {
+    width: 100%;
+}
+
 #checkoutBtn {
     border: none;
     border-radius: 5px;
@@ -321,44 +363,4 @@ h3 {
 
 #checkoutBtn:active {
     transform: translate(2px, 2px);
-}
-
-#checkout {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.discountText {
-    color: rgb(186, 89, 89);
-}
-
-.total {
-    display: flex;
-    justify-content: space-between;
-}
-
-.totalText {
-    font-size: 1.2rem;
-}
-
-#photo {
-    height: 150px;
-    width: 150px;
-    background-color: rgb(255, 255, 255);
-    padding: 1rem;
-}
-
-#infoText {
-    display: flex;
-    flex-direction: column;
-}
-
-#infoText p {
-    margin: .5rem;
-    font-size: 1.2rem;
-}
-
-hr {
-    width: 100%;
 }

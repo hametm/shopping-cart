@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 import Nav from "./Nav";
 import Product from "./Product";
 import apple from "../styles/images/apple.png";
@@ -32,8 +31,6 @@ function Shop(props) {
         {name: "Avocado", id: uuid(), image: avocado, price: 2},
         {name: "Watermelon", id: uuid(), image: watermelon, price: 5},
       ];
-
-
 
     const showProducts = productList.map(product => {
         return (
