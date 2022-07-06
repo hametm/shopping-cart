@@ -25,6 +25,7 @@ function App() {
           key: uuid(), 
           amount: 1, 
           price: product.price,
+          src: product.image,
           };
       setCartList(cartList.concat(cartProduct));
       setTotalPrice(x => x + product.price)

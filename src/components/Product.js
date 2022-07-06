@@ -1,6 +1,6 @@
 function Product(props) {
     return (
-        <div className="product" onClick={props.productClick}>
+        <div className="product">
             <div id="imgContainer">
                 <img className="productImg" src={props.src} alt={props.name} />
             </div>

@@ -272,6 +272,10 @@ h3 {
     align-items: center;
 }
 
+#cartProductInfo img {
+    width: 100%;
+}
+
 #checkoutContainer {
     display: flex;
     justify-content: space-evenly;
@@ -343,7 +347,8 @@ h3 {
 #photo {
     height: 150px;
     width: 150px;
-    background-color: rgb(188, 188, 188);
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
 }
 
 #infoText {

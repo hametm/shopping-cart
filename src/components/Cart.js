@@ -18,7 +18,7 @@ function Cart(props) {
         return (
             <div className="cartProduct" id={product.name}>
                 <div id="cartProductInfo">
-                    <div id="photo">Image placeholder</div>
+                    <div id="photo"><img src={product.src} alt="" /></div>
                     <div id="infoText">
                         <p><strong>{product.name}</strong></p>
                         <p>${(product.price).toFixed(2)} each</p>
