@@ -52,13 +52,13 @@ function App() {
       return (
         <HashRouter basename="/">
             <Routes>
-                <Route path = "/" element={<Home amount={cartAmount} />} />
+                <Route exact path = "/" element={<Home amount={cartAmount} />} />
                 <Route 
-                  path = "/shop" 
+                  exact path = "/shop" 
                   element={<Shop addToCart={addToCart} amount={cartAmount} />} 
                 />
                 <Route 
-                  path = "/cart" 
+                  exact path = "/cart" 
                   element={<Cart 
                               list={cartList} 
                               amount={cartAmount} 
