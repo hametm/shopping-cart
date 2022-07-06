@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/hametm/shopping-cart/static/css/main.ace017c5.css",
-    "main.js": "/hametm/shopping-cart/static/js/main.07a9e5e6.js",
+    "main.js": "/hametm/shopping-cart/static/js/main.91823740.js",
     "static/media/fruit-background.jpg": "/hametm/shopping-cart/static/media/fruit-background.cb366a2bd2651481287a.jpg",
     "static/media/kiwi.png": "/hametm/shopping-cart/static/media/kiwi.c29d6613c9c9c58f45dc.png",
     "static/media/kumquat.png": "/hametm/shopping-cart/static/media/kumquat.dbd49fb1a39071e48adf.png",
@@ -16,10 +16,10 @@
     "static/media/apple.png": "/hametm/shopping-cart/static/media/apple.68669a7b1b8b5d11c760.png",
     "index.html": "/hametm/shopping-cart/index.html",
     "main.ace017c5.css.map": "/hametm/shopping-cart/static/css/main.ace017c5.css.map",
-    "main.07a9e5e6.js.map": "/hametm/shopping-cart/static/js/main.07a9e5e6.js.map"
+    "main.91823740.js.map": "/hametm/shopping-cart/static/js/main.91823740.js.map"
   },
   "entrypoints": [
     "static/css/main.ace017c5.css",
-    "static/js/main.07a9e5e6.js"
+    "static/js/main.91823740.js"
   ]
 }
