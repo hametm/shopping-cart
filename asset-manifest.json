@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/hametm/shopping-cart/static/css/main.ace017c5.css",
-    "main.js": "/hametm/shopping-cart/static/js/main.b71b3ac3.js",
-    "static/media/fruit-background.jpg": "/hametm/shopping-cart/static/media/fruit-background.cb366a2bd2651481287a.jpg",
-    "static/media/kiwi.png": "/hametm/shopping-cart/static/media/kiwi.c29d6613c9c9c58f45dc.png",
-    "static/media/kumquat.png": "/hametm/shopping-cart/static/media/kumquat.dbd49fb1a39071e48adf.png",
-    "static/media/lime.png": "/hametm/shopping-cart/static/media/lime.f1e626191d140bb7ba2e.png",
-    "static/media/grapes.png": "/hametm/shopping-cart/static/media/grapes.2fa91d68ecc6ccdc6162.png",
-    "static/media/strawberry.png": "/hametm/shopping-cart/static/media/strawberry.8ec7fc68ff9f77599d41.png",
-    "static/media/avocado.png": "/hametm/shopping-cart/static/media/avocado.504038647435b83bb6e7.png",
-    "static/media/watermelon.png": "/hametm/shopping-cart/static/media/watermelon.df671e3b04bec8a86176.png",
-    "static/media/banana.png": "/hametm/shopping-cart/static/media/banana.bd7a464940e6a2a1a3a3.png",
-    "static/media/lemon.png": "/hametm/shopping-cart/static/media/lemon.becd7441124ffdb18903.png",
-    "static/media/orange.png": "/hametm/shopping-cart/static/media/orange.b1fec72984b71b4bb921.png",
-    "static/media/apple.png": "/hametm/shopping-cart/static/media/apple.68669a7b1b8b5d11c760.png",
-    "index.html": "/hametm/shopping-cart/index.html",
-    "main.ace017c5.css.map": "/hametm/shopping-cart/static/css/main.ace017c5.css.map",
-    "main.b71b3ac3.js.map": "/hametm/shopping-cart/static/js/main.b71b3ac3.js.map"
+    "main.css": "/shopping-cart/static/css/main.b4a00a5f.css",
+    "main.js": "/shopping-cart/static/js/main.6ee90205.js",
+    "static/media/fruit-background.jpg": "/shopping-cart/static/media/fruit-background.cb366a2bd2651481287a.jpg",
+    "static/media/kiwi.png": "/shopping-cart/static/media/kiwi.c29d6613c9c9c58f45dc.png",
+    "static/media/kumquat.png": "/shopping-cart/static/media/kumquat.dbd49fb1a39071e48adf.png",
+    "static/media/lime.png": "/shopping-cart/static/media/lime.f1e626191d140bb7ba2e.png",
+    "static/media/grapes.png": "/shopping-cart/static/media/grapes.2fa91d68ecc6ccdc6162.png",
+    "static/media/strawberry.png": "/shopping-cart/static/media/strawberry.8ec7fc68ff9f77599d41.png",
+    "static/media/avocado.png": "/shopping-cart/static/media/avocado.504038647435b83bb6e7.png",
+    "static/media/watermelon.png": "/shopping-cart/static/media/watermelon.df671e3b04bec8a86176.png",
+    "static/media/banana.png": "/shopping-cart/static/media/banana.bd7a464940e6a2a1a3a3.png",
+    "static/media/lemon.png": "/shopping-cart/static/media/lemon.becd7441124ffdb18903.png",
+    "static/media/orange.png": "/shopping-cart/static/media/orange.b1fec72984b71b4bb921.png",
+    "static/media/apple.png": "/shopping-cart/static/media/apple.68669a7b1b8b5d11c760.png",
+    "index.html": "/shopping-cart/index.html",
+    "main.b4a00a5f.css.map": "/shopping-cart/static/css/main.b4a00a5f.css.map",
+    "main.6ee90205.js.map": "/shopping-cart/static/js/main.6ee90205.js.map"
   },
   "entrypoints": [
-    "static/css/main.ace017c5.css",
-    "static/js/main.b71b3ac3.js"
+    "static/css/main.b4a00a5f.css",
+    "static/js/main.6ee90205.js"
   ]
 }
