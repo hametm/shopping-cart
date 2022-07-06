@@ -9,7 +9,7 @@ const Nav = (props) => {
             <Link style={{textDecoration: "none"}} to="/">
                 <div id="logo">
                     <div><img src={logo} alt="fruits" /></div>
-                    <h4>fruit</h4>
+                    <h4>fruit!</h4>
                 </div>
             </Link>
             <ul>
