@@ -54,11 +54,11 @@ function App() {
             <Routes>
                 <Route exact path = "/" element={<Home amount={cartAmount} />} />
                 <Route 
-                  exact path = "/shop" 
+                  path = "/shop" 
                   element={<Shop addToCart={addToCart} amount={cartAmount} />} 
                 />
                 <Route 
-                  exact path = "/cart" 
+                  path = "/cart" 
                   element={<Cart 
                               list={cartList} 
                               amount={cartAmount} 
