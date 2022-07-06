@@ -19,7 +19,7 @@ const Nav = (props) => {
                     <li>Shop</li>
                 </Link>
                 <Link style={{textDecoration: "none"}} to="/cart">
-                    <li>Cart: {props.amount}</li>
+                    <li>Basket: {props.amount}</li>
                 </Link>
             </ul>
         </nav>
