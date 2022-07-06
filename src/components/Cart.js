@@ -12,7 +12,7 @@ function Cart(props) {
                 }
             }
         }
-    }, props.list.amount);
+    });
 
     const displayCart = props.list.map(product => {
         return (

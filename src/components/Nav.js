@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../styles/images/logo.png";
+import basket from "../styles/images/basket-outline.png";
 
 const Nav = (props) => {
     return (
@@ -13,13 +14,18 @@ const Nav = (props) => {
             </Link>
             <ul>
                 <Link style={{textDecoration: "none"}} to="/">
-                    <li>Home</li>
+                    <li className="links">Home</li>
                 </Link>
                 <Link style={{textDecoration: "none"}} to="/shop">
-                    <li>Shop</li>
+                    <li className="links">Shop</li>
                 </Link>
                 <Link style={{textDecoration: "none"}} to="/cart">
-                    <li>Basket: {props.amount}</li>
+                    <li>
+                        <div id="cart">
+                            <img src={basket} alt="basket" />
+                            {props.amount}
+                        </div>
+                    </li>
                 </Link>
             </ul>
         </nav>

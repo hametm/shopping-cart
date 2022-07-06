@@ -63,7 +63,7 @@ nav ul {
     color: white;
 }
 
-nav li:hover {
+.links:hover {
     text-decoration: underline;
 }
 
@@ -87,6 +87,10 @@ nav h4 {
     font-family: 'Londrina Solid', cursive;
     font-size: 1.75rem;
     letter-spacing: 1px;
+}
+
+nav img {
+    width: 40px;
 }
 
 /* Home */
@@ -175,6 +179,7 @@ header {
     width: 75%;
     grid-template-columns: repeat(auto-fit, 220px);
     gap: 3rem;
+    justify-content: center;
 }
 
 .product {
