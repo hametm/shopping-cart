@@ -6,21 +6,15 @@ function Cart(props) {
     const [superDiscount, setSuperDiscount] = useState(0);
 
     useEffect(() => {
-        if (props.amount > 0) {
-            setSuperDiscount(.01);
-        }
-        if (props.amount === 0) {
-            setSuperDiscount(0);
-        }
+        if (props.amount > 0) setSuperDiscount(.01);
+        if (props.amount === 0) setSuperDiscount(0);
     });
 
     useEffect(() => {
         for (let i = 0; i < props.list.length; i++) {
             if (props.list[i].amount === 0) {
                 const container = document.getElementById(props.list[i].name);
-                if (container) {
-                    container.remove();
-                }
+                if (container) container.remove();
             }
         }
     });

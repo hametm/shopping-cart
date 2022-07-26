@@ -14,7 +14,6 @@ import strawberry from "../styles/images/strawberry.png";
 import watermelon from "../styles/images/watermelon.png";
 import { v4 as uuid } from 'uuid';
 
-
 function Shop(props) {
 
     const productList = [
